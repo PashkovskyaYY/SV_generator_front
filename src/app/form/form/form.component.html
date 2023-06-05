@@ -1,0 +1,64 @@
+<div class="form">
+  <div class="leftpart">
+    <div class="formChild" *ngFor="let item of datasource">
+      <label>{{item.label}}</label>
+      <input type="text" placeholder="{{item.name}}">
+    </div>
+    <button>Generate</button>
+  </div>
+  <div class="rightpart">
+    <div class="leftcolumn">
+      <h1>Values</h1>
+      <div class="formChild">
+        <p>RMSmeas</p>
+        <p>Phase</p>
+      </div>
+      <div class="formChild" *ngFor="let item of measurements">
+        <label>{{item.label}}</label>
+        <input type="text" placeholder="{{item.name}}">
+        <input type="text" placeholder="{{item.name2}}">
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <h1>Quality</h1>
+      <div class="formChild">
+        <p>Ia</p>
+      </div>
+      <div class="formChild">
+        <p>Ib</p>
+      </div>
+      <div class="formChild">
+        <p>Ic</p>
+      </div>
+      <div class="formChild">
+        <p>In</p>
+      </div>
+      <div class="formChild">
+        <p>Ua</p>
+      </div>
+      <div class="formChild">
+        <p>Ub</p>
+      </div>
+      <div class="formChild">
+        <p>Uc</p>
+      </div>
+      <div class="formChild">
+        <p>Un</p>
+      </div>
+      <section class="example-section">
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+        <mat-checkbox class="example-margin"></mat-checkbox>
+      </section>
+
+    </div>
+  </div>
+  <h3 class="footer">SV Generator MPEI RP Department</h3>
+</div>
+
+
