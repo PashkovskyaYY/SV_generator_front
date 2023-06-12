@@ -7,11 +7,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {FormComponent} from "./form/form/form.component";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+// import { TableComponent } from './table/table.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    // TableComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    CommonModule
   ],
   providers: [
     BrowserModule,
